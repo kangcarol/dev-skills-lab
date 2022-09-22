@@ -10,7 +10,7 @@
   <h1>New Skill Detail</h1>
   <h2>Skill #<%=skill._id%></h2>
   <h3><%=skill.skillName%></h3>
-  <p>Required: <%= skill.required ? 'Yes' : 'No' %></p>
-	<a href="/todos">Go back</a>
+  <p>Required: <%= skill.required ? 'required' : 'optional' %></p>
+	<a href="/skills">Go back</a>
 </body>
 </html>
