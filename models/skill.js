@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema //class
 
-//! Define the basic schema for the Skills Model -> ({}) is called a path
+//! Define the basic SCHEMA for the Skills Model -> ({}) is called a path
 const skillSchema = new Schema({
   skillName: String, //String is capitalized bc its a builtin schemaTypes
   required: Boolean,
