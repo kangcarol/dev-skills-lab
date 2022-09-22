@@ -9,6 +9,7 @@
 </head>
 <body>
   <h1>New Skill Detail</h1>
+  <a href="/skills/<%= skill._id%>/edit">Edit Skill</a>
   <h2>Skill #<%=skill._id%></h2>
   <h3><%=skill.skillName%></h3>
   <p>Required: <%= skill.required ? 'required' : 'optional' %></p>
