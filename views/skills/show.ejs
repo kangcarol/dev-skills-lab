@@ -7,16 +7,10 @@
   <title>Express Skills</title>
 </head>
 <body>
-  <h1>Skills</h1>
-  <ul>
-    <% skills.forEach(skill => { %>
-      <li>
-        <%= skill.skillName %>
-        -
-        <%= skill.required ? "required" : "optional" %>
-      </li>
-    <% }) %>
-  </ul>
-  <a href="/skills/new">Add Skill</a>
+  <h1>New Skill Detail</h1>
+  <h2>Skill #<%=skill._id%></h2>
+  <h3><%=skill.skillName%></h3>
+  <p>Required: <%= skill.required ? 'Yes' : 'No' %></p>
+	<a href="/todos">Go back</a>
 </body>
 </html>

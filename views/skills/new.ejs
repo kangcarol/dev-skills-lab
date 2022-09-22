@@ -7,16 +7,10 @@
   <title>Express Skills</title>
 </head>
 <body>
-  <h1>Skills</h1>
-  <ul>
-    <% skills.forEach(skill => { %>
-      <li>
-        <%= skill.skillName %>
-        -
-        <%= skill.required ? "required" : "optional" %>
-      </li>
-    <% }) %>
-  </ul>
-  <a href="/skills/new">Add Skill</a>
+    <h1>New Skill</h1>
+    <form action="/skills" method="post" autocomplete="off">
+      <input type="text" name="skillName">
+      <button type="submit">Save Skill</button>
+    </form>
 </body>
 </html>

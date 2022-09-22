@@ -12,6 +12,13 @@ router.get('/', skillsCtrl.index)
 //   res.send('respond with a resource')
 // })
 
+// POST - localhost:3000/skills/new
+router.get('/new', skillsCtrl.new)
+
+router.get('/:id', skillsCtrl.show)
+
+router.post('/', skillsCtrl.create)
+
 export {
   router
 }
