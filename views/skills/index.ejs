@@ -13,7 +13,7 @@
     <% skills.forEach(skill => { %>
       <li>
         <form
-          action="/skills/<% skills._id %>?_method=DELETE"
+          action="/skills/<%= skill._id %>?_method=DELETE"
           class="delete-form"
           method="POST"
         >
